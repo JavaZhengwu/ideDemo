@@ -1,0 +1,64 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" onTap="clickTab">内部通知</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" onTap="clickTab">任务管理</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" onTap="clickTab">公司公告</view>
+</view>
+<view class = "{{currentTab == 0 ? 'show':'hidden'}}">
+  <scroll-view>
+    <view class="interiorText">
+      <view class="interior_one">
+        <image class="interiorImg" mode="scaleToFill" src="../../img/lb.jpg"/>
+      </view>
+      <view class="interior_two">
+        <view class="">恭喜</view>
+        <view class="congratulation">恭喜XX获得上月销售冠军恭喜XX获得上月销售冠军恭喜XX获得上月销售冠军</view>
+      </view>
+      <view class="interior_three">14:20</view>
+    </view>
+  </scroll-view>
+</view>
+<view class = "{{currentTab == 1 ? 'show':'hidden'}}">
+  <scroll-view>
+    <view class="interiorText" a:for="{{yejiList}}">
+      <view class="interior_one">
+        <image class="interiorImg" mode="scaleToFill" src="../../img/lb.jpg"/>
+      </view>
+      <view class="interior_two">
+        <view class="interiorTitle">
+          <text style="color:#333;font-weight:600;font-size:14px;">{{item.title}}</text>
+          <text style="color:rgb(151,151,151);margin-right:10px;" a:if="{{item.type==0}}">月度考核</text>
+          <text style="color:rgb(151,151,151);margin-right:10px;" a:elif="{{item.type==1}}">季度考核</text>
+          <text style="color:rgb(151,151,151);margin-right:10px;" a:else>年度考核</text>
+        </view>
+        <view class="congratulation">
+          <view class="target marginTop">
+            销售业绩目标(
+            <text class="colorWeight">{{item.achievement}}</text>)
+          </view>
+          <view class="thenTarget marginTop">
+            已完成销售业绩(
+            <text class="colorWeight">{{item.achievementD}}</text>)
+          </view>
+          <view class="repayTarget marginTop">
+            待完成销售业绩(
+            <text class="colorWeight">{{item.achievementSurplus}}</text>)
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class = "{{currentTab == 2 ? 'show':'hidden'}}">
+  <scroll-view>
+    <view class="interiorText" a:for="{{companyList}}">
+      <view class="interior_one">
+        <image class="interiorImg" mode="scaleToFill" src="http://192.168.2.169:8080/egorder_yhb{{item.areaName}}"/>
+      </view>
+      <view class="interior_two">
+        <view class="">{{item.title}}</view>
+        <view class="congratulation">{{item.content}}</view>
+        <view class="interior_three">{{item.createTime}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

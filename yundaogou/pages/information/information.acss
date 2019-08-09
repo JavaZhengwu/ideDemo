@@ -1,0 +1,105 @@
+/* pages/about/about.wxss */
+
+page {
+  background: #f1f0f0;
+  color: #000;
+}
+
+.about_page {
+  margin: 0 10px;
+}
+
+.swiper-tab {
+  width: 100%;
+  /* border-bottom: 2rpx solid #ccc; */
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color: #ccc;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+.swiper-tab-item {
+  width: 50%;
+  color: #323232;
+  font-weight: 500;
+}
+
+.active {
+  color: #099dff;
+  /* border-bottom: 4rpx solid #F65959; */
+  font-size: 16px;
+  /* font-weight: bold; */
+  border-bottom: 2px solid;
+}
+
+.juzhong {
+  margin: 0 auto;
+}
+
+.domain {
+  background-color: #fff;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.interiorText {
+  padding: 15px 0px 15px 0px;
+  margin-top: 5px;
+  background: #fff;
+  display: flex;
+}
+
+.interior_one {
+  flex: 1;
+  margin: 5px 10px 0px 10px;
+}
+
+.interiorImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.interior_two {
+  flex: 3;
+  padding-top: 10px;
+}
+
+.interior_three {
+  /* width: 10%; */
+  line-height: 35px;
+  margin-right: 5px;
+}
+
+.interiorTitle {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.congratulation {
+  font-size: 12px;
+}
+
+.marginTop {
+  margin-top: 10px;
+}
+
+.colorWeight {
+  color: red;
+  padding: 0px 3px;
+}

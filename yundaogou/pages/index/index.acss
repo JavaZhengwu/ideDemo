@@ -1,0 +1,241 @@
+.thisBaozhu {
+  /* padding: 0rpx 12.077rpx; */
+}
+
+.dixian {
+  border-bottom: 1px dashed #ccc;
+  height: 100rpx;
+  padding: 15px 15px 15px 15px;
+  /* width: 94%; */
+  background: #fff;
+}
+
+.thisMonth {
+  display: flex;
+  height: 36.232rpx;
+  padding: 10px;
+}
+
+.target {
+  flex: 1;
+  text-align: center;
+  border-right: 1px dashed #ccc;
+  height: 40px;
+}
+
+.text_target {
+  display: block;
+  letter-spacing: 1.812rpx;
+  color: #323232;
+  font-weight: 400;
+  margin-bottom: 3.623rpx;
+  margin-top: 8.454rpx;
+}
+
+.text_number {
+  letter-spacing: 1.812rpx;
+  padding-top: 13.285rpx;
+  color: #e50808;
+  padding-bottom: 10px;
+}
+
+.reach {
+  flex: 1;
+  text-align: center;
+}
+
+.rankingList {
+  background: #fff;
+  padding: 10px 15px;
+}
+
+.rankingText {
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+.numberOne {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  height: 70px;
+}
+
+.oneImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 20rpx;
+  margin-left: 15px;
+}
+
+.oneLeft {
+  flex: 4;
+  display: flex;
+}
+
+.one_img {
+  width: 70px;
+}
+
+.one_ent {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.one_task {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgb(151, 151, 151);
+}
+
+.oneRight {
+  margin-right: 15px;
+}
+
+.rightImg {
+  width: 40px;
+  height: 50px;
+  margin-top: 20rpx;
+}
+
+.guide {
+  /* height: 100px; */
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.guideText {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.guide_bottom {
+  width: 50px;
+  margin-left: 40px;
+  margin-top: 10px;
+  float: left;
+}
+
+.bom {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+/* 待办事项 */
+
+.dbsx {
+  margin-top: 10px;
+  background: #fff;
+  padding: 15px 0px;
+}
+
+.dbsxText {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+}
+
+.dbsxButton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dbsxTarget {
+  /* width: 50%; */
+}
+
+.backGroundColor {
+  background: #2ecc71;
+  width: 164px;
+  height: 90px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.numberDbsx {
+  height: 56px;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dwcmb text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dwcmb {
+  display: flex;
+  align-items: center;
+}
+
+.dwcmb image {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.gongzuo {
+  margin-top: 10px;
+  height: 100px;
+  background: #fff;
+}
+
+.gongzuoText {
+  margin: 0px 15px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gongzuoTab {
+  padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabKey {
+  width: 33%;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  padding: 10px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabKey:nth-child(3) {
+  border-right: none;
+}
+
+.tabKey:nth-child(4) {
+  border-bottom: none;
+}
+
+.tabKey:nth-child(5) {
+  border-bottom: none;
+}
+
+.tabKey:nth-child(6) {
+  border-bottom: none;
+  border-right: none;
+}
+
+.tabImg image {
+  width: 36px;
+  height: 36px;
+}
+
+.tabText {
+  margin-top: 10px;
+  font-size: 16px;
+}

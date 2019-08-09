@@ -1,0 +1,42 @@
+{
+  "pages": [
+   "pages/index/index",
+    "pages/information/information",
+    "pages/member/member",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  },
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+     "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "activeIcon": "img/tab/home_fill_light.png",
+        "icon": "img/tab/home_light.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "name": "通知",
+        "activeIcon": "img/tab/community_fill_light.png",
+        "icon": "img/tab/community_light.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "name": "会员",
+        "activeIcon": "img/tab/group_fill_light.png",
+        "icon": "img/tab/group_light.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "name": "我的",
+        "activeIcon": "img/tab/my_fill_light.png",
+        "icon": "img/tab/my_light.png"
+      }
+    ]
+    }
+}

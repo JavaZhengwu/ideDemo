@@ -1,0 +1,12 @@
+page {
+  background: #f7f7f7;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.color_gray {
+  color: #999;
+}

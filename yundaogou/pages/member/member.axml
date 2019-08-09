@@ -1,0 +1,29 @@
+<view class="search">
+  <input type="text" class="searchInput" placeholder="请输入会员名称" onInput="searchInput" />
+</view>
+<scroll-view scroll-y="true" onScrollToLower="onScrollToLower" style="height: 646px;padding-bottom:10px;">
+  <view class="user" a:for="{{servletList}}" onTap="amendUser" data-id="{{item.id}}">
+    <view class="userImg">
+      <image class="portrait" mode="scaleToFill" src="../../img/lb.jpg"/>
+    </view>
+    <view class="userText">
+      <view class="userText_one">
+        <text class="userName">{{item.name}}</text>
+        <text class="userLeaning">意向客户</text>
+      </view>
+      <view class="userText_two">
+        联系方式：{{item.mobile}}
+      </view>
+      <view class="userText_three">地址：{{item.address}}</view>
+      <view class="userBq" a:if="{{item.retailcustomerLadelName}}">
+      标签：{{item.retailcustomerLadelName}}
+      </view>
+      <view class="userBq" a:else>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<view class="addMember" onTap="addUser">
+  +
+</view>
+<view a:if="{{servletType}}" style="text-align:center;color:rgb(151,151,151);padding:5px;0px;">没有更多的数据</view>

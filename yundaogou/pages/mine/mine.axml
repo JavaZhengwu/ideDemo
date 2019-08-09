@@ -1,0 +1,43 @@
+<view class="head">
+  <image class="headImg" mode="scaleToFill" src="../../img/lb.jpg"/>
+  <view class="headText">
+    <view class="text_top">admin</view>
+    <view class="text-bottom">销售总监</view>
+  </view>
+</view>
+<view class="integral">
+  <view class="integral_left">
+    <view class="integralText">累计积分</view>
+    <view class="integralNmer">1000</view>
+  </view>
+  <view class="integral_right">
+    <view class="integralText">累计积分</view>
+    <view class="integralNmer">1000</view>
+  </view>
+</view>
+<view class="middle">
+  <view class="tabNav" onTap="IntegralRecord">
+    <view class="tabText">积分记录</view>
+    <view class="jiantou">
+      <image class="jiantuoImg" mode="scaleToFill" src="../../img/jiantou.png"/>
+    </view>
+  </view>
+  <view class="tabNav" onTap="retailOrders">
+    <view class="tabText">零售订单</view>
+    <view class="jiantou">
+      <image class="jiantuoImg" mode="scaleToFill" src="../../img/jiantou.png"/>
+    </view>
+  </view>
+  <view class="tabNav">
+    <view class="tabText">关于我们</view>
+    <view class="jiantou">
+      <image class="jiantuoImg" mode="scaleToFill" src="../../img/jiantou.png"/>
+    </view>
+  </view>
+  <view class="tabNav">
+    <view class="tabText">退出登录</view>
+    <view class="jiantou">
+      <image class="jiantuoImg" mode="scaleToFill" src="../../img/jiantou.png"/>
+    </view>
+  </view>
+</view>

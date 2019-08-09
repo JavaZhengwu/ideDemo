@@ -1,0 +1,73 @@
+.head {
+  height: 120px;
+  background: #099dff;
+  display: flex;
+  align-items: center;
+}
+
+.headImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.headText {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.text_top {
+  margin-bottom: 10px;
+}
+
+.integral {
+  height: 60px;
+  display: flex;
+  background: #fff;
+  padding: 10px 0px;
+}
+
+.integral_left {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #000;
+}
+
+.integralText {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.integralNmer {
+  color: #f61a1a;
+  font-size: 14px;
+}
+
+.integral_right {
+  flex: 1;
+  text-align: center;
+}
+.middle{
+  margin-top: 10px;
+}
+.tabNav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0px;
+}
+.tabText{
+margin-left: 30px;
+font-size: 16px;
+}
+.jiantou{
+  margin-right: 20px;
+}
+.jiantuoImg{
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,133 @@
+<view style="width:100%;">
+  <view style="width:100%">
+    <swiper autoplay="{{autoplay}}" interval="{{interval}}" indicator-dots="true" style="height:140px">
+      <block a:for="{{advertises}}">
+        <swiper-item>
+          <image style="height:140px;width:100%;" mode="scaleToFill" src="http://192.168.2.169:8080/egorder_yhb{{item}}" style="width:100%"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="dixian">
+    <view class="thisBaozhu">
+      <view class="thisMonth">
+        <view class="target">
+          <view class="text_target">本月目标(元)</view>
+          <text class="text_number" a:if="{{indexList.achievement}}">{{indexList.achievement}}</text>
+          <text class="text_number" a:else style="font-size:20px;line-height:32px;">┄</text>
+        </view>
+        <view class="reach">
+          <view class="text_target">本月达成(元)</view>
+          <text class="text_number" style="color:#037ce2;" a:if="{{indexList.achievementDest}}">{{indexList.achievementDest}}</text>
+          <text class="text_number" a:else style="font-size:20px;line-height:32px;">┄</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" onScrollToLower="onScrollToLower" style="height: 230px;">
+    <view class="rankingList">
+      <text class="rankingText">本月销售排行榜</text>
+      <view class="numberOne" a:for="{{chievementDetails}}" wx:for-index="idx">
+        <view class="oneLeft">
+          <view class="one_img">
+            <image mode="scaleToFill" src="../../img/lb.jpg" class="oneImg"></image>
+          </view>
+          <view class="one_ent">
+            <view class="one_name">
+              <text>{{item.creatorName}}</text>
+            </view>
+            <view class="one_task">
+              <view>完成任务的{{item.achievement/item.achievementDest*100}}%</view>
+              <view style="color:rgb(151,151,151);color:#e50808;width:138px;text-align:center;">已达到金额 ¥{{item.achievement}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="oneRight" >
+          <image src="{{item.img}}" class="rightImg" mode="" / ></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view >
+  <view class="dbsx">
+    <view class="dbsxText">待办事项</view>
+    <view class="dbsxButton">
+      <view class="dbsxTarget" onTap="jumpTzTwo">
+        <view class="backGroundColor">
+          <view class="numberDbsx">
+            <text a:if="{{indexList.achievementNum}}">{{indexList.achievementNum}}</text>
+            <text a:else>┄</text>
+          </view>
+          <view class="dwcmb">
+            <image mode="scaleToFill" src="../../img/tubiao.png"/>
+            <text>待完成目标</text>
+          </view>
+        </view>
+      </view>
+      <view class="dbsxTrain" onTap="jumpDpx">
+        <view class="backGroundColor" style="background:#40aaff">
+          <view class="numberDbsx">
+            <text a:if="{{indexList.cultivateNum}}">{{indexList.cultivateNum}}</text>
+            <text a:else>┄</text>
+          </view>
+          <view class="dwcmb">
+            <image mode="scaleToFill" src="../../img/tubiao.png"/>
+            <text>待参加培训</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="gongzuo">
+    <view class="gongzuoText">工作</view>
+    <view class="gongzuoTab">
+      <view class="tabKey" onTap="jumpkaohe">
+        <view class="tabImg">
+          <image mode="scaleToFill" src="../../img/kaohe.png"/>
+        </view>
+        <view class="tabText">
+          <text>考核</text>
+        </view>
+      </view>
+      <view class="tabKey" onTap="jumpPx">
+        <view class="tabImg">
+          <image mode="scaleToFill" src="../../img/px.png"/>
+        </view>
+        <view class="tabText">
+          <text>培训</text>
+        </view>
+      </view>
+      <view class="tabKey" onTap="integral">
+        <view class="tabImg">
+          <image mode="scaleToFill" src="../../img/jifen.png"/>
+        </view>
+        <view class="tabText">
+          <text>积分</text>
+        </view>
+      </view>
+      <view class="tabKey" onTap="memberIndex">
+        <view class="tabImg">
+          <image mode="scaleToFill" src="../../img/huiyuan.png"/>
+        </view>
+        <view class="tabText">
+          <text>会员</text>
+        </view>
+      </view>
+      <view class="tabKey" onTap="cashier">
+        <view class="tabImg">
+          <image mode="scaleToFill" src="../../img/shouyin.png"/>
+        </view>
+        <view class="tabText">
+          <text>收银</text>
+        </view>
+      </view>
+      <view class="tabKey">
+        <view class="tabImg">
+          <image mode="scaleToFill" src=""/>
+        </view>
+        <view class="tabText">
+          <text></text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
